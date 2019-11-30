@@ -1,0 +1,38 @@
+<!-- views/pages/index.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% include("../partials/head") %>
+</head>
+<body class="container">
+
+<header>
+    <% include('../partials/navbar') %>
+</header>
+
+<main>
+    
+  <div class="homepage">
+      <header>
+          <h1>Welcome to Ask Live</h1>
+      </header>  
+      <section>
+        <p>Are you a...</p>
+        <div>
+            <a href="/prof">Professor</a>
+        </div>
+        <p>or</p>
+        <div>
+          <a href="/student">Student</a>
+        </div>
+      </section>
+    </div>
+</main>
+
+<footer>
+    <% include("../partials/footer") %>
+</footer>
+
+</body>
+</html>
