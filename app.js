@@ -7,12 +7,34 @@ app.get('/', (req, res) => {
 	res.render('pages/home');
 });
 
-app.get('/student', (req, res) => {
-	res.send('Student flow');
+// students flow
+app.get('/student/join-room', (req, res) => {
+	res.render('pages/joinRoom');
 });
 
-app.get('/prof', (req, res) => {
-	res.send('Prof flow');
+app.get('/student/room/:room_id', (req, res) => {
+	// res.render('pages/endRoomStudent');
+	res.send('pages/endRoomStudent');
+});
+
+app.get('/student/room/end', (req, res) => {
+	// res.render('pages/endRoomStudent');
+	res.send('pages/endRoomStudent');
+});
+
+// prof flow
+app.get('/prof/create-room', (req, res) => {
+	res.render('pages/createRoom');
+});
+
+app.get('/prof/room/:room_id', (req, res) => {
+	// res.render('pages/endRoomProf');
+	res.send('roomID: fafsf');
+});
+
+app.get('/prof/room/end', (req, res) => {
+	// res.render('pages/endRoomProf');
+	res.send('pages/endRoomProf');
 });
 
 app.listen(7777, () => {
