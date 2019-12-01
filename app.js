@@ -1,5 +1,20 @@
+import { room, prof, question, student } from 'schema.js';
+
 const express = require('express');
 const app = express();
+const firebase = require('firebase');
+
+const db = firebase
+	.initializeApp({
+		apiKey: 'AIzaSyDUvh1FX-fc5dXoTNZ_yH_A8Vi-as3PtDU',
+		authDomain: 'localhackday-2019.firebaseapp.com',
+		databaseURL: 'https://localhackday-2019.firebaseio.com',
+		projectId: 'localhackday-2019',
+		storageBucket: 'localhackday-2019.appspot.com',
+		messagingSenderId: '928257373340',
+		appId: '1:928257373340:web:f007da14e0cd18d3f26959'
+	})
+	.database();
 
 app.set('view engine', 'ejs');
 
