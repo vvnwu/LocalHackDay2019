@@ -1,8 +1,9 @@
-import { room, prof, question, student } from 'schema.js';
+// import { Prof, Student, Problem, Room } from './firebase/schema';
 
 const express = require('express');
 const app = express();
 const firebase = require('firebase');
+const schema = require('./firebase/schema');
 
 const db = firebase
 	.initializeApp({
