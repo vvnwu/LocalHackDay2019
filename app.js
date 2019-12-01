@@ -1,5 +1,21 @@
+// import { Prof, Student, Problem, Room } from './firebase/schema';
+
 const express = require('express');
 const app = express();
+const firebase = require('firebase');
+const schema = require('./firebase/schema');
+
+const db = firebase
+	.initializeApp({
+		apiKey: 'AIzaSyDUvh1FX-fc5dXoTNZ_yH_A8Vi-as3PtDU',
+		authDomain: 'localhackday-2019.firebaseapp.com',
+		databaseURL: 'https://localhackday-2019.firebaseio.com',
+		projectId: 'localhackday-2019',
+		storageBucket: 'localhackday-2019.appspot.com',
+		messagingSenderId: '928257373340',
+		appId: '1:928257373340:web:f007da14e0cd18d3f26959'
+	})
+	.database();
 
 app.set('view engine', 'ejs');
 
@@ -14,6 +30,9 @@ app.get('/student/join-room', (req, res) => {
 
 app.post('/student/join-room', (req, res) => {
 	// send to firebase and redirect to /student/room/:room_id
+	const data = req.body.data;
+	prof = new prof(0);
+	prof.markQuestion(0);
 });
 
 app.get('/student/room/:room_id', (req, res) => {

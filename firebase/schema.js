@@ -58,3 +58,11 @@ class Room  {
         this.room = room;
     }
 }
+
+// export { Room, Question, Student, Prof };
+module.exports = {
+	Room: Room,
+	Question: Question,
+	Student: Student,
+	Prof: Prof
+};
