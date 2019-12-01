@@ -1,6 +1,131 @@
-/* homepage */
-.homepage {
+
+/* endRoomStudnet */
+.endRoomStudent{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-}
+  }
+  
+  .btn {
+	background: orange;
+  }
+  
+  .lowerContainer {
+	display:flex;
+	justify-content: space-between;
+  }
+  
+  .makeButton{
+	width: 150px;
+	background: lightgrey;
+	text-align: center;
+	box-shadow: 1px 1px;
+  }
+  .link{
+	color: inherit; 
+  }
+  .header {
+	background-color: lightgreen;
+	width: 200px;
+	padding: 50px;
+	margin: 20px;
+	
+	line-height: 150px;
+	color: black;
+	
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 30px;
+	line-height: 56px;
+	text-align: center;
+  }
+
+/*createRoom */
+.box{
+	display: flex;
+	  flex-direction: column;
+	  width: auto;
+	  height: auto;
+	  margin:50;
+	  background-color: #B5D3FF;
+	  
+	}
+	
+	.header {
+	  margin-top:35;
+	  font-size: 25;
+	  margin-left: 150;
+	}
+	
+	.inputRoom {
+	  font-size: 20;
+	  margin-top:70;
+	  margin-left: 150;
+	}
+	
+	.textBox{
+	  margin-top:10;
+	  width: 200;
+	  height: 30;
+	}
+	
+	
+	
+	.btn {
+	  margin-top:80;
+	  margin-bottom:40;
+	  margin-left: 215;
+	  padding: 10 30;
+	  font-size: 15;
+	  background-color: #67FF76;
+	}
+
+  /*joinRoom */
+
+.box{
+	display: flex;
+	flex-direction: column;
+	width: auto;
+	height: auto;
+	margin:50;
+	background-color: #B5D3FF;
+	
+  }
+  
+  .header {
+	margin-top:35;
+	font-size: 25;
+	margin-left: 150;
+  }
+  
+  .inputRoom {
+	font-size: 20;
+	margin-top:70;
+	margin-left: 150;
+  }
+  
+  .inputRoom1 {
+	font-size: 20;
+	margin-top:30;
+	margin-left: 150;
+  }
+  
+  .textBox{
+	margin-top:10;
+	width: 200;
+	height: 30;
+  }
+  
+  
+  
+  .btn {
+	margin-top:60;
+	margin-bottom:40;
+	margin-left: 225;
+	padding: 10 30;
+	font-size: 15;
+	background-color: #67FF76;
+  }
+  
+  
