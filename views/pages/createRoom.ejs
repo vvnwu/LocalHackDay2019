@@ -3,18 +3,18 @@
 </head>
 
 <section>
-    <div class="box">
-      <div class="header">Create Room(Professor)</div>
-      <form action="/#">
-        <div class="inputRoom">
-          <label for="roomID">Room ID:</label>
-          <div>
-          <input name="roomID" id="roomID" type="text" class="textBox"required />
-          </div>
-        </div>
+<div class="box">
+  <div class="header">Create Room(professor)</div>
+  <form action="/prof/create-room" method="POST">
+    <div class="inputRoom">
+      <label for="roomNumber">Room Number:</label>
+      <div>
+      <input name="roomNumber" id="roomNumber" type="text" class="textBox"required />
+    </div>
+    </div>
         <div>
-        <button class="btn" type="submit" >Create</button>
-        </div>
-      </form>
-       </div>
-    </section> 
+    <button class="btn" type="submit" >Create</button>
+     </div>
+  </form>
+  </div>
+</section> 
