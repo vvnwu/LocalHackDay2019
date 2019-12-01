@@ -1,4 +1,4 @@
-class prof  {
+class Prof  {
     constructor(room) {
         this.room = room;
         this.markQuestion= function(questionID){
@@ -20,7 +20,7 @@ class prof  {
     }
 }
 
-class student  {
+class Student  {
     constructor(room) {
         this.room = room;
         this.upVoteQuestion= function(questionID){
@@ -43,7 +43,7 @@ class student  {
     }
 }
 
-class question  {
+class Question  {
     constructor(room) {
         var newPostKey = firebase.database().ref().child('/questions').push().key;
         this.id = newPostKey;
@@ -53,7 +53,7 @@ class question  {
     }
 }
 
-class room  {
+class Room  {
     constructor(room) {
         this.room = room;
     }
