@@ -1,14 +1,22 @@
-  <section>
-        <div class="header">Room Ended</div>
-        <form action="#">
-          <div class="inputEmail">
-            <p>Do you want to email this session's questions and likes?<p>
-            <label for="Email">Email:</label>
-            <input name="Email" id="Email" type="text" ><br>
+ <head>
+     <link rel="stylesheet" href="/public/app.css">
+ </head>
+ 
+ <section class="endRoomStudent">
+        <div class="header">Room ended.</div>
+        <form action="#" method="POST">
+          <div class="inputInfo">
+            <p>Do you want to email this session’s questions and likes?</p>
+            <label for="email">Email:</label>
+            <input name="email" id="email" type="text"><br>
             <input type="checkbox" name="questions" value="Questions"> Questions
-        <input type="checkbox" name="likes" value="Likes"> Likes<br><br>
+            <input type="checkbox" name="likes" value="Likes"> Likes<br><br>
           </div>
-          <button type="submit" class="btn">Send </button>
+          <div class="lowerContainer">
+          <button class="btn" type="submit">Send</button>
         </form>
-        <a href="/" class="backToMainMenu">Back to Main Menu</a>
+          <div class="makeButton">
+            <a style="text-decoration:none" href="/" class="link">Back to the     menu</a>
+          </div>
+      </div>
       </section> 

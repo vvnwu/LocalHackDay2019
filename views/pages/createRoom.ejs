@@ -1,10 +1,20 @@
+<head>
+    <link rel="stylesheet" href="/public/app.css">
+</head>
+
 <section>
+<div class="box">
   <div class="header">Create Room(professor)</div>
   <form action="/prof/create-room" method="POST">
     <div class="inputRoom">
       <label for="roomNumber">Room Number:</label>
-      <input name="roomNumber" id="roomNumber" type="text" required />
+      <div>
+      <input name="roomNumber" id="roomNumber" type="text" class="textBox"required />
     </div>
+    </div>
+        <div>
     <button class="btn" type="submit" >Create</button>
+     </div>
   </form>
+  </div>
 </section> 
