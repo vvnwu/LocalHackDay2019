@@ -1,0 +1,34 @@
+<head>
+    <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
+
+  <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
+
+  <!-- Add Firebase products that you want to use -->
+  <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-database.js"></script>
+  <script src="schema.js"></script>
+</head>
+<body>
+  <h1 id="test">hello world</h1>
+</body>
+<script>
+  /*Firebase Initialization*/
+  const firebaseConfig = {
+      apiKey: "AIzaSyDUvh1FX-fc5dXoTNZ_yH_A8Vi-as3PtDU",
+      authDomain: "localhackday-2019.firebaseapp.com",
+      databaseURL: "https://localhackday-2019.firebaseio.com",
+      projectId: "localhackday-2019",
+      storageBucket: "localhackday-2019.appspot.com",
+      messagingSenderId: "928257373340",
+      appId: "1:928257373340:web:f007da14e0cd18d3f26959"
+    };
+
+  firebase.initializeApp(firebaseConfig);
+  var database = firebase.database();
+
+  console.log("hello");
+  prof= new prof(0);
+  prof.markQuestion(0);
+
+</script>
+
