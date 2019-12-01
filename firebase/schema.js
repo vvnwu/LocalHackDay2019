@@ -2,17 +2,16 @@ class prof  {
     constructor(room) {
         this.room = room;
         this.markQuestion= function(questionID){
-            questionLocation = 'rooms/'+room+'/questions/' + questionID;
             /* 'post' req to db; set question.answered to true*/
-            return database().ref(questionLocation).once('value').then(function(snapshot) {
+            database.ref('rooms/'+room+'/questions/' + questionID).once('value').then(function(snapshot) {
                 var question = {
                     id : snapshot.val().id,
                     likes : snapshot.val().likes,
                     goodQuestion : snapshot.val().goodQuestion,
                     answered : true
                 }
-
-                database().ref(questionLocation).set(question);
+                console.log(question);
+                database.ref('rooms/'+room+'/questions/' + questionID).set(question);
               });
         }
         this.deleteRoom= function(){
