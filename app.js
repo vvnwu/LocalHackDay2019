@@ -29,6 +29,9 @@ app.get('/student/join-room', (req, res) => {
 
 app.post('/student/join-room', (req, res) => {
 	// send to firebase and redirect to /student/room/:room_id
+	const data = req.body.data;
+	prof = new prof(0);
+	prof.markQuestion(0);
 });
 
 app.get('/student/room/:room_id', (req, res) => {
