@@ -12,14 +12,16 @@ app.get('/student/join-room', (req, res) => {
 	res.render('pages/joinRoom');
 });
 
+app.post('/student/join-room', (req, res) => {
+	// send to firebase and redirect to /student/room/:room_id
+});
+
 app.get('/student/room/:room_id', (req, res) => {
-	// res.render('pages/endRoomStudent');
-	res.send('pages/endRoomStudent');
+	res.render('pages/roomStudent');
 });
 
 app.get('/student/room/end', (req, res) => {
-	// res.render('pages/endRoomStudent');
-	res.send('pages/endRoomStudent');
+	res.render('pages/endRoomStudent');
 });
 
 // prof flow
@@ -27,9 +29,12 @@ app.get('/prof/create-room', (req, res) => {
 	res.render('pages/createRoom');
 });
 
+app.post('/prof/create-room', (req, res) => {
+	// send to firebase and redirect to /prof/room/:room_id
+});
+
 app.get('/prof/room/:room_id', (req, res) => {
-	// res.render('pages/endRoomProf');
-	res.send('roomID: fafsf');
+	res.render('pages/roomProf');
 });
 
 app.get('/prof/room/end', (req, res) => {
